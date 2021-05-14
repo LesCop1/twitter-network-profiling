@@ -2,6 +2,7 @@
 
 .idea
 /api/scripts/src
+/src/twint
 dist
 
 # dependencies
