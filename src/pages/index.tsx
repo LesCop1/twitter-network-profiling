@@ -315,13 +315,13 @@ export default function Home() {
       return `<div style="margin: 0 8px; max-width: 20vw">
             <h2>@${node.name}</h2>
             <div>Best relation: <b>@${node.bestStr}</b> with <b>${node.bestVal}</b> interactions.</div>
-            <p>Double click to run a research on @${node.name}.</p>
+            <p>Double click to run a search on @${node.name}.</p>
           </div>
           `;
     }
     return `<div style="margin: 0 8px; max-width: 20vw">
             <h2>@${node.name}</h2>
-            <p>Double click to run a research on @${node.name}.</p>
+            <p>Double click to run a search on @${node.name}.</p>
           </div>
           `;
   };
@@ -393,7 +393,7 @@ export default function Home() {
           </Typography>
           <div className={classes.grow} />
           <Tooltip
-            title={"Your target. The research will be based on this user."}
+            title={"Your target. The search will be based on this user."}
             arrow
           >
             <div className={classes.search}>
@@ -468,7 +468,7 @@ export default function Home() {
               </Typography>
             </div>
           </Tooltip>
-          <Tooltip title={"Enable depth 2 research."}>
+          <Tooltip title={"Enable depth 2 search."}>
             <div className={classes.switch}>
               <Switch checked={depth === 2} onChange={handleDepthChange} />
               <Typography noWrap>Depth 2</Typography>
@@ -491,7 +491,7 @@ export default function Home() {
             onClick={onClickSearch}
             disabled={target === ""}
           >
-            Research
+            Search
           </Button>
         </Toolbar>
       </AppBar>
@@ -545,7 +545,7 @@ export default function Home() {
             </>
         ) : (
           <div className={classes.textAlignCenter}>
-            <DialogTitle>Researching @{target}...</DialogTitle>
+            <DialogTitle>Searching @{target}...</DialogTitle>
             <DialogContent>
               {loadingData.error === "" ? (
                 <>
