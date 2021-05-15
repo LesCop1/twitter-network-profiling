@@ -34,13 +34,13 @@ router.get("/search", async (req: Request, res: Response) => {
   ] = [
     {
       id: id++,
-      name: target,
+      name: target.toLowerCase(),
       color: "blue",
       val: 12,
     },
   ];
   const links: [{ source: number; target: number; proximity?: number }?] = [];
-  const names: string[] = [target];
+  const names: string[] = [target.toLowerCase()];
 
   let targetOutput: string[] = [];
   try {
