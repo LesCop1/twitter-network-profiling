@@ -1,34 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TNP - Twitter network profiler
+Twitter network profiler is a web app allowing you to see the relations around your target's Twitter. 
+It allows you, to see depth 2 relations, therefore a more global view around your target and learn more information about them. 
+You can identify networks more easily.
 
-## Getting Started
 
-First, run the development server:
-
+## Prerequisites
+Before you begin, ensure you have met the following requirements:
+- You have installed [Node (LTS version)]("https://nodejs.org/en/"), [Python3]("https://www.python.org/downloads/"), and [Git]("https://git-scm.com/downloads"). You can check if you have them installed by typing:
 ```bash
-npm run dev
-# or
-yarn dev
+$ node --version
+v14.5.5
+
+$ python --version
+Python 3.9.4
+
+$ git --version
+git version 2.19.1
+```
+- You have a Windows machine.
+> This is due to NextJS having trouble running on Linux machines.
+## Installing TNP
+To install TNP, follow these steps:
+- Clone the repo:
+```bash
+$ git clone https://github.com/LesCop1/twitter-network-profiling
+```
+- Install NPM dependencies:
+```bash
+$ cd twitter-network-profiling
+$ npm i
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Using TNP
+First, run the server:
+```bash
+$ npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) with your browser to access TNP.
 
-You can start editing the page by modifying `pages/index.ts`. The page auto-updates as you edit the file.
+You can start profiling users as you want. Enjoy! 🥳
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Warnings
+TNP uses Python scripts in parallel to fetch users' data fast.
+The more relations you try to fetch, the more scripts will be executed in parallel. 
+There is no limitation on how many scripts can run in parallel, so make sure you take it easy and increase the number of relations step by step.
