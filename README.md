@@ -23,18 +23,18 @@ git version 2.19.1
 To install TNP, follow these steps:
 - Clone the repo:
 ```bash
-$ git clone https://github.com/LesCop1/twitter-network-profiling
+git clone https://github.com/LesCop1/twitter-network-profiling
 ```
 - Install NPM dependencies:
 ```bash
-$ cd twitter-network-profiling
-$ npm i
+cd twitter-network-profiling
+npm i
 ```
 
 ## Using TNP
 First, run the server:
 ```bash
-$ npm run dev
+npm run dev
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to access TNP.
 
