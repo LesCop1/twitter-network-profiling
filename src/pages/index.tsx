@@ -448,7 +448,7 @@ export default function Home() {
                 classes={{
                   root: classes.sliderRoot,
                   thumb:
-                    relationLimit < 34
+                    relationLimit < 35
                       ? classes.sliderThumb
                       : classes.sliderWarning,
                 }}
@@ -459,7 +459,7 @@ export default function Home() {
               />
               <Typography
                 className={
-                  relationLimit < 34
+                  relationLimit < 35
                     ? classes.sliderThumb
                     : classes.sliderWarning
                 }
