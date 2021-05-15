@@ -3,13 +3,13 @@ export default class OccurrenceArray {
   keys: string[];
   occurrence: number[];
   constructor(target: string) {
-    this.banWord = target;
+    this.banWord = target.toLowerCase();
     this.keys = [];
     this.occurrence = [];
   }
 
   add(key: string) {
-    if (key !== this.banWord) {
+    if (key.toLowerCase() !== this.banWord) {
       const index = this.keys.indexOf(key.toLowerCase());
       if (index === -1) {
         this.keys.push(key.toLowerCase());
