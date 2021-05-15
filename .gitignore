@@ -4,6 +4,7 @@
 /api/scripts/src
 /src/twint
 dist
+package-lock.json
 
 # dependencies
 /node_modules

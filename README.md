@@ -31,10 +31,15 @@ cd twitter-network-profiling
 npm i
 ```
 
-## Using TNP
-First, run the server:
+- Build the web app:
 ```bash
-npm run dev
+npm run build
+```
+
+## Using TNP
+First, start the web app:
+```bash
+npm run start
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to access TNP.
 
