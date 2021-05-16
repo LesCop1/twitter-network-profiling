@@ -516,7 +516,7 @@ export default function Home() {
               Why did we make this
             </Link>
             <span>·</span>
-            <Link href={"/report.pdf"}>Report</Link>
+            <Link href={"/RAPPORT_TNP_ENGELS_BAUDUIN.pdf"}>Report</Link>
           </Typography>
         </Container>
       </footer>
